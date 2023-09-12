@@ -1,0 +1,28 @@
+.portfolio {
+  min-height: 100vh;
+  // background: #000;
+
+  &__title {
+    @include text($ff, 700, 36px, 40px, $white);
+    margin-bottom: 40px;
+  }
+  &__text{
+    @include text($ff, 700, 36px, 40px, $white);
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &__card {
+    cursor: pointer;
+  }
+}
+._works {
+  float: right;
+}
+.fa-arrow-right {
+  color: $bg;
+  margin-left: 8px;
+}

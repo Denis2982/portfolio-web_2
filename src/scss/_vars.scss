@@ -1,0 +1,37 @@
+//Fonts:
+$ff: 'Nunito Sans', sans-serif;
+$ff-logo: 'Montserrat', sans-serif;
+$ff-graph: 'Graphik';
+
+
+//Colors:
+$bg: #19191B;
+$white: #ffffff;
+$black: #000000;
+$text: rgba(255, 255, 255, 0.7);
+$bg-btn: #5454D4;
+$bg-card: #1E1E20;
+$bg-serv1: rgba(84, 84, 212, 0.1);
+$bg-serv2: rgba(240, 64, 55, 0.1);
+$bg-serv3: rgba(254, 220, 90, 0.1);
+$bg-cont: rgba(30, 30, 32, 0.5);
+
+
+// Skills section:
+$index: calc(1vw + 1vh);
+$gutter: 30px;
+$side-small: 26;
+$side-big: 42;
+$depth: 8000px;
+$transition-anime: .75s cubic-bezier(.075, .5, 0, 1);
+
+
+//Transition:
+$transition: all .4s ease-in-out;
+
+
+//Breakpoints:
+$desctop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;

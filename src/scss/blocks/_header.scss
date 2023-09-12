@@ -1,0 +1,145 @@
+.header {
+  padding: 25px 0 25px; 
+  position: fixed;  
+  width: 100%;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 5px 0 rgba(22, 22, 22, 0.1);
+  transition: $transition;
+  &._sticky{
+    padding: 5px 0 5px; 
+  }
+  &__inner {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  }
+  @include desctop-small {
+    padding: 40px 0 66px;
+  }
+}
+.video_bg{
+  position: absolute;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;
+}
+.nav {
+  @include tablet {    
+    z-index: 10;
+  }
+  &__list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    transition: $transition;
+    @include tablet {
+      position: fixed;
+      padding: 0 20px;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      z-index: 10;
+      background: $bg;
+      left: 0;
+      top: 0;
+      gap: 1px;
+      transform: translateY(-100vh);
+      &--open {
+        transform: translateY(0);
+      }
+    }
+  }
+  &__list-link {
+    @include text($ff, 400, 18px, 25px, $text);
+    position: relative;
+    transition: $transition;
+    &--active {
+      color: $bg-btn;
+      font-weight: 600;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+  &__list-item {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+      flex: 1;
+      border-bottom: 1px solid $white;
+    }
+  }
+  &__burger {
+    display: none;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    width: 16px;
+    height: 12px;
+    cursor: pointer;
+    @include tablet {
+      display: flex;
+    }
+    span {
+      height: 2px;
+      width: 10px;
+      border-radius: 2px;
+      transform: scale(1);
+      background-color: $white;
+      transition: $transition;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $white;
+      transition: $transition;
+    }
+    &::before {
+      top: 0;
+      width: 16px;
+    }
+    &::after {
+      bottom: 0;
+      width: 6px;
+    }
+    &--open span {
+      transform: scale(0);
+    }
+    &--open::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0, -50%);
+    }
+    &--open::after {
+      width: 16px;
+      bottom: 50%;
+      transform: rotate(45deg) translate(1px, 50%);
+    }
+  }
+}
+.logo{
+  display: flex;
+  flex-direction: column;   
+  @include text($ff-logo, 700, 21px, 24px, $white);  
+  transition: $transition;
+}
+.header._sticky .logo{
+  flex-direction: row;
+}

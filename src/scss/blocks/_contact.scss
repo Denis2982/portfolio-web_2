@@ -1,0 +1,269 @@
+.contact {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, #2A3170, #070A1B);
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.contact-field {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-background {
+  position: relative;
+  background: #fff;
+  min-height: 600px;
+  min-width: 600px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(186, 183, 183, 0.2),
+    rgba(186, 183, 183, 0.1)
+  );
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  z-index: 5;
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0 0 5px 0 rgba(22, 22, 22, 0.1);
+}
+.form {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3.5%;
+    width: 107%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(51, 51, 51, 0.5) url("../../img/main/loading.webp") center /
+      50px no-repeat;
+    box-shadow: 0 0 5px 5px rgba(34, 34, 34, 0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  &._sending::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.contact-title {
+  @include text($ff, 700, 40px, 60px, $white);
+  position: relative;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  padding: 10px;
+  border-top: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-text {
+  @include text($ff, 400, 20px, 30px, $text);
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-inline: 20px;
+  width: 100%;
+}
+
+.contact-form .field {
+  margin: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-form .field label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.contact-form .field input,
+.contact-form .field textarea {
+  width: 100%;
+  font-family: $ff;
+  border: 0px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: $text;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: $white;
+  letter-spacing: 2px;
+}
+
+.contact-form .field input:focus,
+.contact-form .field textarea:focus {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(50px);
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+.contact-field .button-field {
+  display: flex;
+  flex-flow: column;
+}
+
+.contact-form .field button {
+  font-family: $ff;
+  flex-grow: 1;
+  border: 0px;
+  padding: 15px 50px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  transition: 1s;
+  box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form .field button:hover {
+  transform: translateY(-3px);
+  transition: 1s;
+}
+
+.contact-form .button-contact {
+  background: linear-gradient(
+    to right bottom,
+    rgb(223, 55, 153),
+    rgb(202, 44, 128)
+  );
+  color: #fff;
+}
+
+.square {
+  height: 100vh;
+  width: 50vw;
+  display: table;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+}
+
+.square.square-tl {
+  top: -80%;
+  left: -10%;
+  animation: bounce 6s infinite ease-in-out;
+  background: rgb(34, 34, 34, 0.1);
+  z-index: 50;
+}
+
+.square.square-tr {
+  top: 0%;
+  right: -30%;
+  animation: bounce 5s infinite ease-in-out;
+}
+
+.square.square-bl {
+  bottom: -70%;
+  left: -15%;
+  animation: bounce 4s infinite ease-in-out;
+}
+
+.square.square-br {
+  bottom: 0%;
+  right: -40%;
+  animation: bounce 3s infinite ease-in-out;
+  background: rgb(34, 34, 34, 0.1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(45deg);
+    border-radius: 50px;
+  }
+  100% {
+    transform: translateY(0px) rotate(45deg);
+  }
+}
+
+.star {
+  height: 80px;
+  width: 80px;
+  display: table;
+  position: absolute;
+  box-shadow: 0 0 5px 0 rgba(34, 34, 34, 0.5);
+  transition: 0.5s;
+}
+
+.star1 {
+  bottom: -10%;
+  left: -30%;
+  transform: rotate(-30deg);
+  animation: sweep 12s infinite;
+  // background: rgba(34, 34, 34, 0.5);
+}
+
+.star2 {
+  bottom: -30%;
+  left: -10%;
+  transform: rotate(-30deg);
+  animation: sweep 10s infinite;
+  // background: rgb(255, 255, 255, 0.5);
+}
+
+.star3 {
+  top: -30%;
+  left: -10%;
+  transform: rotate(-30deg);
+  animation: sweep1 8s infinite;
+  // background: rgb(255, 255, 255, 0.5);
+}
+@keyframes sweep {
+  100% {
+    bottom: 120%;
+    left: 120%;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sweep1 {
+  100% {
+    top: 120%;
+    left: 120%;
+    transform: rotate(360deg);
+  }
+}
+
+._error {
+  box-shadow: 0 0 15px red;
+}
