@@ -10,21 +10,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600;700;800&display=swap&_v=20230908191106"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
-    />  
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230908191106"
-  />
-    <link rel="stylesheet" href="css/style.min.css?_v=20230908191106" />
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css?_v=20230908191106"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />    
+    />
   </head>
   <body id="body">
     <div class="wrapper">
@@ -38,7 +38,7 @@
             </a>
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__list-item nav__list-link--active">
+                <li class="nav__list-item">
                   <a class="nav__list-link" href="#about">About</a>
                 </li>
                 <li class="nav__list-item">
@@ -141,7 +141,7 @@
                     class="skills__desc-bg1"
                     src="./img/main/Dot.png"
                     alt="background"
-                  />                  
+                  />
                   <h2 class="skills__title">My Skills</h2>
                   <h4 class="skills__subtitle">
                     In my work, I actively use and constantly improve my skills
@@ -206,16 +206,12 @@
                     class="direction-reveal__anim--leave direction-reveal__img"
                   />
 
-                  <div
-                    class="direction-reveal__overlay direction-reveal__anim--enter"
-                  >
-                    <h3 class="direction-reveal__title">Lorem ipsum</h3>
-                    <p class="direction-reveal__text">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore eritatis et
-                      quasi.
-                    </p>
+                  <div class="direction-reveal__overlay direction-reveal__anim--enter">
+                    <h3 class="direction-reveal__title">Mercedes-Benz</h3>
+                    <ul class="direction-reveal__text">
+                      <li class="direction-reveal__text-item">HTML5</li>
+                      <li class="direction-reveal__text-item">CSS3</li>
+                    </ul>
                   </div>
                 </a>
 
@@ -352,7 +348,8 @@
                 >
                   <div class="field name-field">
                     <!-- <label for="name">name</label> -->
-                    <input required
+                    <input
+                      required
                       type="text"
                       id="name"
                       name="name"
@@ -362,7 +359,8 @@
                   </div>
                   <div class="field email-field">
                     <!-- <label for="email">email</label> -->
-                    <input required
+                    <input
+                      required
                       type="email"
                       id="email"
                       name="email"
@@ -414,8 +412,11 @@
       </main>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js?_v=20230908191106"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js?_v=20230908191106"></script>
-    <script src="js/app.min.js?_v=20230908191106"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

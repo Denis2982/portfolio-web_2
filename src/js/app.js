@@ -21,6 +21,26 @@ window.addEventListener("scroll", function() {
   header.classList.toggle("_sticky", this.window.scrollY > 0);
 })
 
+//------Active-menu------------------------------------------------------------
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry =>{
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.nav__list-link').forEach((link) => {
+        let id = link.getAttribute('href').replace('#', '');
+        if (id === entry.target.id) {
+          link.classList.add('_active');          
+        } else {
+          link.classList.remove('_active');
+        }
+      })
+    }
+  }))
+}, {
+  threshold: 0.7
+});
+
+document.querySelectorAll('section').forEach(section => {observer.observe(section)});
+
 //------Form-------------------------------------------------------------------
 import Swal from 'sweetalert2';
 

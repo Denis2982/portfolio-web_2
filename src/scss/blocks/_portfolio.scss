@@ -1,7 +1,6 @@
 .portfolio {
   min-height: 100vh;
-  // background: #000;
-
+  
   &__title {
     @include text($ff, 700, 36px, 40px, $white);
     margin-bottom: 40px;
@@ -25,4 +24,24 @@
 .fa-arrow-right {
   color: $bg;
   margin-left: 8px;
+}
+.direction-reveal__title{
+  margin-bottom: 20px;
+}
+.direction-reveal__text-item{
+  position: relative;
+  padding-left: 20px;
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $white;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
 }
