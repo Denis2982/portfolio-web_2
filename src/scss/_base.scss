@@ -12,7 +12,33 @@ body {
   background: linear-gradient(180deg, #070A1B 0%, #2A3170 100%);
   z-index: 2;
   position: relative;
+  overflow-x: hidden;
 }
+.bg-wrapper__blur-1{
+  position: absolute;
+  z-index: -1;
+  top: 55px;
+  left: -480px;
+  width: 1230px;
+  height: 467px;  
+  background: linear-gradient(180deg,rgba(84,84,212,.2) 0,rgba(84,84,212,.084) 100%);
+  filter: blur(150px);
+  border-radius: 233.5px;
+  transform: rotate(38deg);
+}
+.bg-wrapper__blur-2{
+  position: absolute;
+    z-index: -1;
+    width: 600px;
+    height: 652px;
+    bottom: 200px;
+    right: -320px;   
+    background: linear-gradient(180deg,rgba(84,84,212,.2) 0,rgba(84,84,212,.084) 100%);    
+    filter: blur(150px);
+    border-radius: 233.5px;    
+    transform: matrix(-.58,-.81,-.81,.58,0,0);
+}
+
 section{
   position: relative;
   z-index: 5;

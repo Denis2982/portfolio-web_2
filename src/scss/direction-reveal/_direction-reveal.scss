@@ -1,5 +1,5 @@
 // ----- Component -----
-// .direction-reveal {}
+.direction-reveal {}
 
   .direction-reveal__card {
     display: inline-block;
@@ -23,6 +23,8 @@
       color: #fff;
       overflow: hidden;
       background-color: $overlay-background;
+      display: flex;
+      flex-direction: column;
     }
 
     // .direction-reveal__anim--enter is used to animate in hidden content, the default animation used on the overlay
