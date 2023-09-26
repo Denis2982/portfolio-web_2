@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css" />
     <link
       rel="stylesheet"
@@ -33,21 +34,47 @@
         <div class="container">
           <div class="header__inner">
             <a class="logo" href="#about">
-              <span>Denis&nbsp</span>
-              <span>Taranenko</span>
+              <span data-aos="fade-right" data-aos-duration="800"
+                >Denis&nbsp</span
+              >
+              <span
+                data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                >Taranenko</span
+              >
             </a>
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__list-item">
+                <li
+                  class="nav__list-item"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                >
                   <a class="nav__list-link" href="#about">About</a>
                 </li>
-                <li class="nav__list-item">
+                <li
+                  class="nav__list-item"
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  data-aos-duration="800"
+                >
                   <a class="nav__list-link" href="#skills">Skills</a>
                 </li>
-                <li class="nav__list-item">
+                <li
+                  class="nav__list-item"
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                  data-aos-duration="800"
+                >
                   <a class="nav__list-link" href="#portfolio">Portfolio</a>
                 </li>
-                <li class="nav__list-item">
+                <li
+                  class="nav__list-item"
+                  data-aos="fade-down"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                >
                   <a class="nav__list-link" href="#contact">Contact</a>
                 </li>
               </ul>
@@ -63,9 +90,28 @@
         <section class="about" id="about">
           <div class="about__inner container">
             <div class="about__info">
-              <div class="about__info-title">Hi, I'm Denis,</div>
-              <h1 class="about__info-spec">I'm a front-end web developer.</h1>
-              <div class="about__info-text">
+              <div
+                class="about__info-title"
+                data-aos="zoom-in-right"
+                data-aos-delay="1000"
+                data-aos-duration="600"
+              >
+                Hi, I'm Denis,
+              </div>
+              <h1
+                class="about__info-spec"
+                data-aos="zoom-in-right"
+                data-aos-delay="1400"
+                data-aos-duration="600"
+              >
+                I'm a front-end web developer.
+              </h1>
+              <div
+                class="about__info-text"
+                data-aos="zoom-in-right"
+                data-aos-delay="1800"
+                data-aos-duration="600"
+              >
                 I am a junior web developer with experience building dynamic
                 websites and web applications. I enjoy developing interactive
                 interfaces, optimizing UX and creating cross-browser responsive
@@ -86,35 +132,27 @@
                 I really love my job and strive for professional growth! I would
                 be glad to take on new projects and learning opportunities.
               </div>
-              <!-- Я начинающий веб-разработчик с опытом создания динамических сайтов и
-              веб-приложений. Люблю разрабатывать интерактивные интерфейсы,
-              оптимизировать UX и создавать кроссбраузерные адаптивные дизайны.
-              Использую методологию БЭМ для структурирования кода, что позволяет
-              создавать гибкие и масштабируемые сайты. В верстке применяю HTML5,
-              CSS3, систему сборки Gulp. Стараюсь писать чистый, семантически
-              верный код, использующий современные веб-стандарты. Постоянно изучаю
-              новые технологии и слежу за трендами в веб-разработке. Хочу
-              развиваться как верстальщик и продолжить совершенствовать свои навыки
-              в создании сложных адаптивных интерфейсов, UI/UX дизайне, JavaScript и React. Очень
-              люблю свою работу и стремлюсь к профессиональному росту! Буду рад
-              новым проектам и возможностям для обучения. -->
-              <div class="about__btn">
+              <div class="about__social">
                 <a
-                  class="btn _contact"
+                  class="about__social-link"
                   href="https://github.com/Denis2982"
                   target="_blank"
-                  >GitHub
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                >
+                  <img src="./img/Icons/gitHub.svg" alt="link to gitHub" />
                 </a>
-                <a class="btn _cv" href="#"
-                  >Download CV
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <a
+                  class="about__social-link"
+                  href="www.linkedin.com/in/денис-тараненко-26419327a"
+                  target="_blank"
+                >
+                  <img src="./img/Icons/linkedIn.svg" alt="link to gitHub" />
+                </a>
+                <a
+                  class="about__social-link"
+                  href="https:/t.me/DeniSweb2982"
+                  target="_blank"
+                >
+                  <img src="./img/Icons/tel.svg" alt="link to gitHub" />
                 </a>
               </div>
             </div>
@@ -144,19 +182,37 @@
                     src="./img/main/Dot.png"
                     alt="background"
                   />
-                  <h2 class="skills__title">My Skills</h2>
-                  <h4 class="skills__subtitle">
+                  <h2
+                    class="skills__title"
+                    data-aos="zoom-in-down"
+                    data-aos-duration="1000"
+                  >
+                    My Skills
+                  </h2>
+                  <h4
+                    class="skills__subtitle"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1000"
+                  >
                     In my work, I actively use and constantly improve my skills
                     in the following tools and technologies: HTML5, CSS3,
                     SCSS/Sass, BEM, JavaScript (ES6+), React, Gulp, NPM, Git. I
                     develop frontend programming skills and work with the DOM.
-                    <!-- В своих работах я активно использую и постоянно совершенствую свои навыки в следующих инструментах и технологиях: HTML5, CSS3, SCSS/Sass, БЭМ, JavaScript (ES6+), React, Gulp, NPM, Git. Развиваю навыки фронтенд-программирования и работы с DOM. -->
                   </h4>
                 </div>
                 <div class="skills__list">
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
-                      <img class="icon-html" src="./img/Icons/html_icon.svg" alt="html icon" />
+                      <img
+                        class="icon-html"
+                        src="./img/Icons/html_icon.svg"
+                        alt="html icon"
+                      />
                     </div>
                     <div class="skills__list-name">HTML5</div>
                     <div class="skills__list-text">
@@ -165,9 +221,18 @@
                     </div>
                   </div>
 
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
-                      <img class="icon-css" src="./img/Icons/css.svg" alt="css icon" />
+                      <img
+                        class="icon-css"
+                        src="./img/Icons/css.svg"
+                        alt="css icon"
+                      />
                     </div>
                     <div class="skills__list-name">CSS3</div>
                     <div class="skills__list-text">
@@ -176,10 +241,15 @@
                     </div>
                   </div>
 
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
                       <img
-                      class="icon-scss"
+                        class="icon-scss"
                         src="./img/Icons/scss.svg"
                         alt="scss icon"
                         class="icon-scss"
@@ -187,16 +257,20 @@
                     </div>
                     <div class="skills__list-name">SCSS</div>
                     <div class="skills__list-text">
-                      Creation of maintainable and
-                      modular style code, which improves the development and
-                      maintenance of the project.
+                      Creation of maintainable and modular style code, which
+                      improves the development and maintenance of the project.
                     </div>
                   </div>
 
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
                       <img
-                      class="icon-js"
+                        class="icon-js"
                         src="./img/Icons/js.svg"
                         alt="js icon"
                         class="icon-js"
@@ -209,10 +283,15 @@
                     </div>
                   </div>
 
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
                       <img
-                      class="icon-gulp"
+                        class="icon-gulp"
                         src="./img/Icons/gulp.svg"
                         alt="gulp icon"
                         class="icon-gulp"
@@ -220,16 +299,22 @@
                     </div>
                     <div class="skills__list-name">GULP</div>
                     <div class="skills__list-text">
-                      CSS and JavaScript preprocessor compilation, image optimization,
-                      file concatenation and minification, and others, which
-                      will improve the productivity and quality of your project.
+                      CSS and JavaScript preprocessor compilation, image
+                      optimization, file concatenation and minification, and
+                      others, which will improve the productivity and quality of
+                      your project.
                     </div>
                   </div>
 
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
                       <img
-                      class="icon-npm"
+                        class="icon-npm"
                         src="./img/Icons/npm.svg"
                         alt="npm icon"
                         class="icon-npm"
@@ -243,10 +328,15 @@
                     </div>
                   </div>
 
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
                       <img
-                      class="icon-react"
+                        class="icon-react"
                         src="./img/Icons/react.svg"
                         alt="react icon"
                         class="icon-react"
@@ -259,10 +349,15 @@
                     </div>
                   </div>
 
-                  <div class="skills__list-item">
+                  <div
+                    class="skills__list-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <div class="skills__list-icon">
                       <img
-                      class="icon-wp"
+                        class="icon-wp"
                         src="./img/Icons/wordpress.svg"
                         alt="wordpress icon"
                         class="icon-wp"
@@ -282,7 +377,14 @@
           <!---Portfolio--------------------------------------------------------------->
           <section class="portfolio" id="portfolio">
             <div class="container">
-              <div class="blog-slider">
+              <h2
+                class="portfolio__title"
+                data-aos="zoom-in-down"
+                data-aos-duration="1000"
+              >
+                Portfolio
+              </h2>
+              <div class="blog-slider" data-aos="zoom-in-up" data-aos-duration="1000">
                 <div class="blog-slider__wrp swiper-wrapper">
                   <!-- Slide 1 -->
                   <div class="blog-slider__item --item1 swiper-slide">
@@ -301,7 +403,9 @@
                         <li class="direction-reveal__text-item">GULP</li>
                         <li class="direction-reveal__text-item">Swiper</li>
                         <li class="direction-reveal__text-item">JavaScript</li>
-                        <li class="direction-reveal__text-item">Animation AOS</li>
+                        <li class="direction-reveal__text-item">
+                          Animation AOS
+                        </li>
                       </ul>
                       <a
                         href="https://denis2982.github.io/no_code/"
@@ -330,10 +434,7 @@
                           Transferring layout to CMS WordPress
                         </li>
                       </ul>
-                      <a
-                        href="#"
-                        class="blog-slider__button"
-                        target="_blank"
+                      <a href="#" class="blog-slider__button" target="_blank"
                         >View Work</a
                       >
                     </div>
@@ -351,11 +452,11 @@
                       <div class="blog-slider__title">Enver</div>
                       <ul class="blog-slider__text">
                         <li class="direction-reveal__text-item">HTML5</li>
-                      <li class="direction-reveal__text-item">CSS3</li>
-                      <li class="direction-reveal__text-item">JavaScript</li>
-                      <li class="direction-reveal__text-item">
-                        Animation GSAP
-                      </li>
+                        <li class="direction-reveal__text-item">CSS3</li>
+                        <li class="direction-reveal__text-item">JavaScript</li>
+                        <li class="direction-reveal__text-item">
+                          Animation GSAP
+                        </li>
                       </ul>
                       <a
                         href="https://denis2982.github.io/enver_2/"
@@ -380,8 +481,10 @@
                         <li class="direction-reveal__text-item">HTML5</li>
                         <li class="direction-reveal__text-item">SCSS</li>
                         <li class="direction-reveal__text-item">GULP</li>
-                        <li class="direction-reveal__text-item">Slick slider</li>
-                        <li class="direction-reveal__text-item">JavaScript</li>                        
+                        <li class="direction-reveal__text-item">
+                          Slick slider
+                        </li>
+                        <li class="direction-reveal__text-item">JavaScript</li>
                       </ul>
                       <a
                         href="https://denis2982.github.io/Quiro/"
@@ -405,8 +508,8 @@
                       <ul class="blog-slider__text">
                         <li class="direction-reveal__text-item">HTML5</li>
                         <li class="direction-reveal__text-item">SCSS</li>
-                        <li class="direction-reveal__text-item">GULP</li>                        
-                        <li class="direction-reveal__text-item">JavaScript</li>                        
+                        <li class="direction-reveal__text-item">GULP</li>
+                        <li class="direction-reveal__text-item">JavaScript</li>
                       </ul>
                       <a
                         href="https://denis2982.github.io/Zone/"
@@ -429,8 +532,8 @@
                       <div class="blog-slider__title">Oculus</div>
                       <ul class="blog-slider__text">
                         <li class="direction-reveal__text-item">HTML5</li>
-                        <li class="direction-reveal__text-item">CSS3</li>                                               
-                        <li class="direction-reveal__text-item">JavaScript</li>                        
+                        <li class="direction-reveal__text-item">CSS3</li>
+                        <li class="direction-reveal__text-item">JavaScript</li>
                       </ul>
                       <a
                         href="https://denis2982.github.io/oculus/"
@@ -453,9 +556,9 @@
                       <div class="blog-slider__title">William King</div>
                       <ul class="blog-slider__text">
                         <li class="direction-reveal__text-item">HTML5</li>
-                        <li class="direction-reveal__text-item">SCSS</li>                                               
-                        <li class="direction-reveal__text-item">JavaScript</li>                        
-                        <li class="direction-reveal__text-item">GULP</li>                        
+                        <li class="direction-reveal__text-item">SCSS</li>
+                        <li class="direction-reveal__text-item">JavaScript</li>
+                        <li class="direction-reveal__text-item">GULP</li>
                       </ul>
                       <a
                         href="https://denis2982.github.io/William_King/"
@@ -465,15 +568,12 @@
                       >
                     </div>
                   </div>
-                  
                 </div>
                 <div class="blog-slider__pagination"></div>
               </div>
             </div>
           </section>
         </div>
-
-        <!-- ----------------------------------------------------------------------------- -->
 
         <!---Contact--------------------------------------------------------------->
         <section class="contact" id="contact">
@@ -561,7 +661,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

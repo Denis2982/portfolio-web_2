@@ -60,10 +60,19 @@
     }   
   }
 
-  &__btn {
+  &__social {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+  }
+  &__social-link{
+    & img{
+      width: 36px;
+      transition: $transition;
+    }
+    & img:hover{
+      transform: scale(1.2);
+    }
   }
   
 }

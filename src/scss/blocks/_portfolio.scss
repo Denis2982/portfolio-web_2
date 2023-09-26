@@ -2,6 +2,10 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  &__title {
+    @include text($ff, 700, 36px, 46px, $white);
+    margin-bottom: 40px;
+  }
 }
 
 .blog-slider {
