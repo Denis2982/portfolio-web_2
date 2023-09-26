@@ -32,7 +32,7 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <a class="logo" href="#">
+            <a class="logo" href="#about">
               <span>Denis&nbsp</span>
               <span>Taranenko</span>
             </a>
@@ -156,7 +156,7 @@
                 <div class="skills__list">
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
-                      <img src="./img/Icons/html_icon.svg" alt="html icon" />
+                      <img class="icon-html" src="./img/Icons/html_icon.svg" alt="html icon" />
                     </div>
                     <div class="skills__list-name">HTML5</div>
                     <div class="skills__list-text">
@@ -167,7 +167,7 @@
 
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
-                      <img src="./img/Icons/css.svg" alt="css icon" />
+                      <img class="icon-css" src="./img/Icons/css.svg" alt="css icon" />
                     </div>
                     <div class="skills__list-name">CSS3</div>
                     <div class="skills__list-text">
@@ -179,6 +179,7 @@
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
                       <img
+                      class="icon-scss"
                         src="./img/Icons/scss.svg"
                         alt="scss icon"
                         class="icon-scss"
@@ -186,8 +187,7 @@
                     </div>
                     <div class="skills__list-name">SCSS</div>
                     <div class="skills__list-text">
-                      SCSS (Sass) allows you to develop style files more
-                      efficiently and flexibly. Creation of maintainable and
+                      Creation of maintainable and
                       modular style code, which improves the development and
                       maintenance of the project.
                     </div>
@@ -196,7 +196,8 @@
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
                       <img
-                        src="./img/Icons/icons1.svg"
+                      class="icon-js"
+                        src="./img/Icons/js.svg"
                         alt="js icon"
                         class="icon-js"
                       />
@@ -211,6 +212,7 @@
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
                       <img
+                      class="icon-gulp"
                         src="./img/Icons/gulp.svg"
                         alt="gulp icon"
                         class="icon-gulp"
@@ -218,9 +220,7 @@
                     </div>
                     <div class="skills__list-name">GULP</div>
                     <div class="skills__list-text">
-                      Gulp allows you to simplify and speed up the development
-                      process by performing automated tasks such as CSS and
-                      JavaScript preprocessor compilation, image optimization,
+                      CSS and JavaScript preprocessor compilation, image optimization,
                       file concatenation and minification, and others, which
                       will improve the productivity and quality of your project.
                     </div>
@@ -229,6 +229,7 @@
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
                       <img
+                      class="icon-npm"
                         src="./img/Icons/npm.svg"
                         alt="npm icon"
                         class="icon-npm"
@@ -245,6 +246,7 @@
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
                       <img
+                      class="icon-react"
                         src="./img/Icons/react.svg"
                         alt="react icon"
                         class="icon-react"
@@ -260,6 +262,7 @@
                   <div class="skills__list-item">
                     <div class="skills__list-icon">
                       <img
+                      class="icon-wp"
                         src="./img/Icons/wordpress.svg"
                         alt="wordpress icon"
                         class="icon-wp"
@@ -279,86 +282,6 @@
           <!---Portfolio--------------------------------------------------------------->
           <section class="portfolio" id="portfolio">
             <div class="container">
-              <!-- <h2 class="portfolio__title">Portfolio</h2>
-              <div
-                class="direction-reveal direction-reveal--3-grid direction-reveal--demo-slide-push"
-              >
-                
-
-                
-
-                
-
-                <a href="#" class="direction-reveal__card">
-                  <img
-                    src="./img/works/work_4.jpg"
-                    alt="Image"
-                    class="direction-reveal__anim--leave direction-reveal__img"
-                  />
-
-                  <div
-                    class="direction-reveal__overlay direction-reveal__anim--enter"
-                  >
-                    <h3 class="direction-reveal__title">Lorem ipsum</h3>
-                    <p class="direction-reveal__text">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore eritatis et
-                      quasi.
-                    </p>
-                  </div>
-                </a>
-
-                <a href="#" class="direction-reveal__card">
-                  <img
-                    src="./img/works/work_5.jpg"
-                    alt="Image"
-                    class="direction-reveal__anim--leave direction-reveal__img"
-                  />
-
-                  <div
-                    class="direction-reveal__overlay direction-reveal__anim--enter"
-                  >
-                    <h3 class="direction-reveal__title">Lorem ipsum</h3>
-                    <p class="direction-reveal__text">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore eritatis et
-                      quasi.
-                    </p>
-                  </div>
-                </a>
-
-                <a href="#" class="direction-reveal__card">
-                  <img
-                    src="./img/works/work_6.jpg"
-                    alt="Image"
-                    class="direction-reveal__anim--leave direction-reveal__img"
-                  />
-
-                  <div
-                    class="direction-reveal__overlay direction-reveal__anim--enter"
-                  >
-                    <h3 class="direction-reveal__title">Lorem ipsum</h3>
-                    <p class="direction-reveal__text">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore eritatis et
-                      quasi.
-                    </p>
-                  </div>
-                </a>
-              </div>
-
-              <a class="btn _works" href="/works.html"
-                >More works
-                <i class="fa-solid fa-arrow-right"></i>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </a> -->
-
               <div class="blog-slider">
                 <div class="blog-slider__wrp swiper-wrapper">
                   <!-- Slide 1 -->
@@ -461,7 +384,7 @@
                         <li class="direction-reveal__text-item">JavaScript</li>                        
                       </ul>
                       <a
-                        href="#"
+                        href="https://denis2982.github.io/Quiro/"
                         class="blog-slider__button"
                         target="_blank"
                         >View Work</a
@@ -469,107 +392,80 @@
                     </div>
                   </div>
                   <!-- Slide 5 -->
-                  <div class="blog-slider__item --item1 swiper-slide">
+                  <div class="blog-slider__item --item5 swiper-slide">
                     <div class="blog-slider__item-bg"></div>
                     <div class="blog-slider__img">
-                      <img src="./img/works/work_9.jpg" alt="" />
+                      <img
+                        src="./img/works/work_7.jpg"
+                        alt="image work X-Zone"
+                      />
                     </div>
                     <div class="blog-slider__content">
-                      <span class="blog-slider__code">26 December 2019</span>
-                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                      <div class="blog-slider__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Recusandae voluptate repellendus magni illo ea
-                        animi?
-                      </div>
-                      <a href="#" class="blog-slider__button">READ MORE</a>
+                      <div class="blog-slider__title">X-Zone</div>
+                      <ul class="blog-slider__text">
+                        <li class="direction-reveal__text-item">HTML5</li>
+                        <li class="direction-reveal__text-item">SCSS</li>
+                        <li class="direction-reveal__text-item">GULP</li>                        
+                        <li class="direction-reveal__text-item">JavaScript</li>                        
+                      </ul>
+                      <a
+                        href="https://denis2982.github.io/Zone/"
+                        class="blog-slider__button"
+                        target="_blank"
+                        >View Work</a
+                      >
                     </div>
                   </div>
                   <!-- Slide 6 -->
-                  <div class="blog-slider__item --item1 swiper-slide">
+                  <div class="blog-slider__item --item6 swiper-slide">
                     <div class="blog-slider__item-bg"></div>
                     <div class="blog-slider__img">
-                      <img src="./img/works/work_9.jpg" alt="" />
+                      <img
+                        src="./img/works/work_3.jpg"
+                        alt="image work Oculus"
+                      />
                     </div>
                     <div class="blog-slider__content">
-                      <span class="blog-slider__code">26 December 2019</span>
-                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                      <div class="blog-slider__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Recusandae voluptate repellendus magni illo ea
-                        animi?
-                      </div>
-                      <a href="#" class="blog-slider__button">READ MORE</a>
+                      <div class="blog-slider__title">Oculus</div>
+                      <ul class="blog-slider__text">
+                        <li class="direction-reveal__text-item">HTML5</li>
+                        <li class="direction-reveal__text-item">CSS3</li>                                               
+                        <li class="direction-reveal__text-item">JavaScript</li>                        
+                      </ul>
+                      <a
+                        href="https://denis2982.github.io/oculus/"
+                        class="blog-slider__button"
+                        target="_blank"
+                        >View Work</a
+                      >
                     </div>
                   </div>
                   <!-- Slide 7 -->
-                  <div class="blog-slider__item --item1 swiper-slide">
+                  <div class="blog-slider__item --item7 swiper-slide">
                     <div class="blog-slider__item-bg"></div>
                     <div class="blog-slider__img">
-                      <img src="./img/works/work_9.jpg" alt="" />
+                      <img
+                        src="./img/works/work_6.jpg"
+                        alt="image work William King"
+                      />
                     </div>
                     <div class="blog-slider__content">
-                      <span class="blog-slider__code">26 December 2019</span>
-                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                      <div class="blog-slider__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Recusandae voluptate repellendus magni illo ea
-                        animi?
-                      </div>
-                      <a href="#" class="blog-slider__button">READ MORE</a>
+                      <div class="blog-slider__title">William King</div>
+                      <ul class="blog-slider__text">
+                        <li class="direction-reveal__text-item">HTML5</li>
+                        <li class="direction-reveal__text-item">SCSS</li>                                               
+                        <li class="direction-reveal__text-item">JavaScript</li>                        
+                        <li class="direction-reveal__text-item">GULP</li>                        
+                      </ul>
+                      <a
+                        href="https://denis2982.github.io/William_King/"
+                        class="blog-slider__button"
+                        target="_blank"
+                        >View Work</a
+                      >
                     </div>
                   </div>
-                  <!-- Slide 8 -->
-                  <div class="blog-slider__item --item1 swiper-slide">
-                    <div class="blog-slider__item-bg"></div>
-                    <div class="blog-slider__img">
-                      <img src="./img/works/work_9.jpg" alt="" />
-                    </div>
-                    <div class="blog-slider__content">
-                      <span class="blog-slider__code">26 December 2019</span>
-                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                      <div class="blog-slider__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Recusandae voluptate repellendus magni illo ea
-                        animi?
-                      </div>
-                      <a href="#" class="blog-slider__button">READ MORE</a>
-                    </div>
-                  </div>
-                  <!-- Slide 9 -->
-                  <div class="blog-slider__item --item1 swiper-slide">
-                    <div class="blog-slider__item-bg"></div>
-                    <div class="blog-slider__img">
-                      <img src="./img/works/work_9.jpg" alt="" />
-                    </div>
-                    <div class="blog-slider__content">
-                      <span class="blog-slider__code">26 December 2019</span>
-                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                      <div class="blog-slider__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Recusandae voluptate repellendus magni illo ea
-                        animi?
-                      </div>
-                      <a href="#" class="blog-slider__button">READ MORE</a>
-                    </div>
-                  </div>
-                  <!-- Slide 10 -->
-                  <div class="blog-slider__item --item1 swiper-slide">
-                    <div class="blog-slider__item-bg"></div>
-                    <div class="blog-slider__img">
-                      <img src="./img/works/work_9.jpg" alt="" />
-                    </div>
-                    <div class="blog-slider__content">
-                      <span class="blog-slider__code">26 December 2019</span>
-                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                      <div class="blog-slider__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Recusandae voluptate repellendus magni illo ea
-                        animi?
-                      </div>
-                      <a href="#" class="blog-slider__button">READ MORE</a>
-                    </div>
-                  </div>
+                  
                 </div>
                 <div class="blog-slider__pagination"></div>
               </div>
@@ -640,7 +536,7 @@
           </div>
           <img
             class="star star1"
-            src="./img/Icons/icons1.svg"
+            src="./img/Icons/js.svg"
             alt="background image"
           />
           <img

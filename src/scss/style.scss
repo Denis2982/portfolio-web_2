@@ -4,7 +4,6 @@
 @import 'vars';
 @import 'mixins';
 @import 'base';
-@import 'direction-reveal';
 @import '../../node_modules/swiper/swiper-bundle';
 
 
@@ -13,7 +12,5 @@
 @import 'blocks/header';
 @import 'blocks/about';
 @import 'blocks/skills';
-
 @import 'blocks/contact';
-@import 'blocks/loader';
-@import 'blocks/portfolio2';
+@import 'blocks/portfolio';

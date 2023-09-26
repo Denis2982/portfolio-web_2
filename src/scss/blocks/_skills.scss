@@ -1,8 +1,7 @@
 .skills {
   min-height: 100vh;
   padding-top: 80px;
-  padding-bottom: 80px;
-  // background: #000;
+  padding-bottom: 80px;  
   
   &__inner {
     display: flex;
@@ -10,14 +9,12 @@
     flex-direction: column;
     gap: 30px;   
   }
-
   &__desc {
     max-width: 800px;
     position: relative;
     text-align: center;
     margin: 0 auto;
   }
-
   &__desc-bg1 {
     max-width: 100%;
     max-height: 100%;
@@ -25,7 +22,6 @@
     top: 143px;
     left: 456px;
   }  
-
   &__title {
     @include text($ff, 700, 36px, 46px, $white);
     margin-bottom: 40px;
@@ -33,17 +29,15 @@
   &__subtitle {
     @include text($ff, 400, 20px, 26px, $text);    
   }
-
   &__list {
     display: grid;    
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
   }
-
   &__list-item {
     display: grid;
     // grid-auto-flow: row;    
-    grid-template-rows: minmax(50px,auto) auto 1fr;
+    grid-template-rows: minmax(70px,auto) auto 1fr;
     text-align: center;
     gap: 20px;
     padding: 30px;
@@ -51,12 +45,8 @@
   &__list-icon{
     display: flex;
     align-items: center;
-    justify-content: center;
-    & img{
-      height: 40px;
-    }
+    justify-content: center;    
   }
-
   &__list-name {
     @include text($ff, 600, 24px, 36px, $white);   
   }
@@ -64,7 +54,6 @@
     @include text($ff, 400, 18px, 24px, $text);
     margin-right: 15px;
   }
-
   &__list-box {
     display: block;
     width: 300px;
@@ -74,7 +63,6 @@
     background: transparent;
     position: relative;
   }
-
   &__list-level {
     position: absolute;
     display: block;
@@ -86,6 +74,21 @@
     left: 0;
   }
 }
+.icon-html, .icon-css{
+  height: 36px;
+}
 .icon-scss{
+  height: 42px;
+}
+.icon-js{
+  height: 50px;
+}
+.icon-gulp, .icon-npm{
+  height: 66px;
+}
+.icon-react{
   height: 45px;
+}
+.icon-wp{
+  height: 52px;
 }

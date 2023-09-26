@@ -49,6 +49,15 @@
     &.--item4 {
         background-image: url(../../img/works/work_5.jpg);
       }
+    &.--item5 {
+        background-image: url(../../img/works/work_7.jpg);
+      }
+    &.--item6 {
+        background-image: url(../../img/works/work_3.jpg);
+      }
+    &.--item7 {
+        background-image: url(../../img/works/work_6.jpg);
+      }
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
@@ -119,7 +128,7 @@
   }
 
   &__content {
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -145,13 +154,11 @@
   }
 
   &__title {
-    @include text($ff, 800, 48px, 60px, $bg-card);
-    margin-bottom: 20px;
+    @include text($ff, 800, 48px, 60px, $bg-card);    
   }
 
   &__text {
-    @include text($ff, 600, 26px, 36px, $bg-card);
-    margin-bottom: 20px;
+    @include text($ff, 600, 26px, 36px, $bg-card);    
   }
 
   &__button {
