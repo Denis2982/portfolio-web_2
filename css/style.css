@@ -1608,10 +1608,17 @@ swiper-container .swiper-notification {
   max-height: 100%;
   top: 12%;
 }
-.about__btn {
+.about__social {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.about__social-link img {
+  width: 36px;
+  transition: all 0.4s ease-in-out;
+}
+.about__social-link img:hover {
+  transform: scale(1.2);
 }
 
 .video_bg {
@@ -2003,6 +2010,14 @@ swiper-container .swiper-notification {
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+.portfolio__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .blog-slider {
